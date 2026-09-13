@@ -1,8 +1,7 @@
-# ============ FUNÇÃO DE FORMATAÇÃO ============
 def formatar_real(valor):
     return f"{valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
-# ============ ENTRADA DE DADOS ============
+#DADOS
 print("=" * 50)
 print("      SISTEMA DE ALUGUEL DE CARRO")
 print("=" * 50)
@@ -13,13 +12,13 @@ preco_diaria = float(input("Preco da diaria (R$): "))
 dias = int(input("Quantidade de dias: "))
 percentual_desconto = float(input("Percentual de desconto (%): "))
 
-# ============ PROCESSAMENTO ============
+#PROCESSAMENTO
 subtotal = preco_diaria * dias
 valor_desconto = subtotal * (percentual_desconto / 100)
 total_final = subtotal - valor_desconto
 valor_medio = total_final / dias
 
-# ============ SAÍDA FORMATADA ============
+#SAÍDA
 print("\n" + "=" * 50)
 print("         RECIBO DO ALUGUEL")
 print("=" * 50)
