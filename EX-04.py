@@ -7,7 +7,7 @@ Regras:
 - 18 anos ou mais SEM CNH: Solicitar apresentação da CNH
 """
 
-# ============ ENTRADA DE DADOS ============
+#ENTRADA
 
 # Coletando a idade com validação (repete até digitar um número válido e não-negativo)
 while True:
@@ -32,7 +32,7 @@ while True:
     else:
         print("Resposta inválida! Digite 'sim' ou 'nao'.")
 
-# ============ PROCESSAMENTO ============
+#PROCESSAMENTO
 
 if idade < 18:
     # Caso 1: menor de idade -> nem entra na segunda condição
@@ -49,7 +49,7 @@ else:
     mensagem = "Apresente sua CNH"
     status = "pendente"
 
-# ============ SAÍDA FORMATADA ============
+#SAÍDA
 
 print("\n" + "=" * 50)
 print("        RESULTADO DA CLASSIFICAÇÃO")
