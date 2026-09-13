@@ -1,12 +1,8 @@
 """
-EXEMPLO SIMPLES DE ESTRUTURAS DE SELECAO EM PYTHON
-Sistema de avaliação de carros para uma concessionária
-COM ENTRADA DE DADOS PELO USUARIO
+Sistema simples de avaliação de carros para uma concessionária
 """
 
-# ============================================
-# 1. ESTRUTURA ANINHADA (if dentro de if)
-# ============================================
+# 1. IF DENTRO DE IF
 
 def verificar_liberacao_carro():
     """
@@ -32,9 +28,7 @@ def verificar_liberacao_carro():
     else:
         print("RESULTADO: NAO LIBERADO - Revisão pendente")
 
-# ============================================
-# 2. ESTRUTURA ENCADEADA COM ELIF
-# ============================================
+# 2. ESTRUTURA COM ELIF
 
 def classificar_estado_carro():
     """
@@ -61,9 +55,7 @@ def classificar_estado_carro():
 
     print(f"CLASSIFICACAO: {classificacao}")
 
-# ============================================
-# 3. ESTRUTURA MATCH CASE
-# ============================================
+# 3. MATCH CASE SIMPLES
 
 def processar_menu_oficina():
     """
@@ -96,9 +88,7 @@ def processar_menu_oficina():
         case _:
             print(f"OPCAO INVALIDA: {opcao}")
 
-# ============================================
-# 4. MATCH CASE COM GUARDA
-# ============================================
+# 4. MATCH CASE
 
 def avaliar_carro():
     """
@@ -133,9 +123,8 @@ def avaliar_carro():
         case _:
             print(f"{modelo}: SITUACAO INDEFINIDA")
 
-# ============================================
-# 5. FUNCAO PRINCIPAL COM MENU INTERATIVO
-# ============================================
+
+# 5. MENU INTERATIVO
 
 def main():
     """
@@ -174,9 +163,7 @@ def main():
 
         input("\nPressione Enter para continuar...")
 
-# ============================================
-# PONTO DE ENTRADA
-# ============================================
+# ENTRADA
 
 if __name__ == "__main__":
     main()
