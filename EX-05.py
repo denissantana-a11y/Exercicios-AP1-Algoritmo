@@ -157,3 +157,26 @@ def main():
         print("5 - Sair")
 
         opcao = input("\nEscolha uma opção (1-5): ")
+
+        if opcao == "1":
+            verificar_liberacao_carro()
+        elif opcao == "2":
+            classificar_estado_carro()
+        elif opcao == "3":
+            processar_menu_oficina()
+        elif opcao == "4":
+            avaliar_carro()
+        elif opcao == "5":
+            print("\nSaindo do sistema...")
+            break
+        else:
+            print("\nOPCAO INVALIDA! Tente novamente.")
+
+        input("\nPressione Enter para continuar...")
+
+# ============================================
+# PONTO DE ENTRADA
+# ============================================
+
+if __name__ == "__main__":
+    main()
